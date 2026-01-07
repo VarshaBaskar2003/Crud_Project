@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="card shadow">
+    <div class="card-body text-center">
+        <h4>Confirm Delete</h4>
+        <p>Are you sure you want to delete <strong>{{ student.name }}</strong>?</p>
+
+
+        <form method="POST">
+            {% csrf_token %}
+            <button type="submit">Yes, Delete</button>
+            <a href="{% url 'student_list' %}">Cancel</a>
+        </form>
+
+    </div>
+</div>
+
+{% endblock %}
