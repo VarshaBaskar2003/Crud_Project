@@ -16,7 +16,16 @@ A simple Django project to perform CRUD operations on student data.
 - Bootstrap
 
 ## How to Run
-1. Create virtual environment
-2. Install requirements
-3. Run migrations
-4. Start server
+
+1. Clone the repository
+2. Create virtual environment
+   python -m venv venv
+3. Activate venv
+   venv\Scripts\activate
+4. Install dependencies
+   pip install -r requirements.txt
+5. Run migrations
+   python manage.py migrate
+6. Start server
+   python manage.py runserver
+
